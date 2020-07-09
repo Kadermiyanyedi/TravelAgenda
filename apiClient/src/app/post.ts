@@ -4,4 +4,5 @@ export interface Post {
     post_detail: string;
     post_date: string;
     user: string;
+    post_author: string;
 }

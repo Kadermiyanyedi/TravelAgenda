@@ -1,0 +1,44 @@
+<nav class="navbar navbar-light bg-dark mb-3 ">
+    <h2 class="text-info text-left">TRAVEL AGENDA</h2>
+    <h2 class="text-info text-right">KARTACA</h2>
+</nav><br>
+<div class="container ">
+    <h5>ADD TRAVEL POST</h5><br>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Post Title</span>
+        </div>
+        <input #postTitle type="text" aria-describedby="basic-addon1">
+
+    </div>
+    <div class="input-group mb-3 ">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Post Detail</span>
+        </div>
+        <textarea #postDetail rows="4" cols="50">
+        </textarea>
+
+    </div>
+    <button class="btn btn-info" style="margin: auto;"
+        (click)="add(postTitle.value,postDetail.value); postTitle.value='';postDetail.value=''">
+        ADD POST
+    </button>
+</div><br>
+<hr>
+<div class="container ">
+    <h3 class="text-center">POST LİST</h3><br>
+    <ul class="list-group list-group-flush">
+        <li class="card mb-3 " *ngFor="let post of posts">
+            <div class=" card-header alert alert-primary" role="alert">
+                <a class="alert-link" routerLink="/detail/{{ post.id }}">
+                    <h5 class="card-title">{{ post.post_title }}</h5>
+                </a>
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{ post.post_detail }}</p>
+                <strong style="color:rgb(6, 6, 85)" class="taskDate"><i class="fa fa-calendar"></i>
+                    {{ post.post_date | date }}</strong>
+            </div>
+        </li>
+    </ul>
+</div>

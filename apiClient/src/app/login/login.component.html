@@ -1,0 +1,24 @@
+<div class="container" style="margin-top: -5%; padding: 10%; margin-bottom: 5%;">
+    <h3>LOGİN PAGE</h3>
+    <hr><br>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Username</span>
+        </div>
+        <input #username type="text" aria-describedby="basic-addon1">
+
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Password</span>
+        </div>
+        <input #password type="text" aria-describedby="basic-addon1">
+
+    </div>
+
+    <button class="btn btn-info form-group"
+        (click)="login(username.value,password.value); username.value='';password.value=''">
+        Login
+    </button>
+
+</div>

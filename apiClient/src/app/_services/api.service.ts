@@ -24,7 +24,7 @@ export class ApiService {
     return this.http.get<Post>(this.Url + "posts/" + id, this.httpOptions)
   }
   addPost(post: any): Observable<Post> {
-    return this.http.post<Post>(this.Url + "posts", post, this.httpOptions)
+    return this.http.post<Post>(this.Url + "posts/", post, this.httpOptions)
   }
   loginGetToken(username: string, password: string) {
     const login_info = { 'username': username, 'password': password };

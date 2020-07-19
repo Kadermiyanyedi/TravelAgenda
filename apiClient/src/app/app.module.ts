@@ -8,13 +8,15 @@ import { PostsComponent } from './posts/posts.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { LoginComponent } from './login/login.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
     PostDetailComponent,
-    LoginComponent
+    LoginComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

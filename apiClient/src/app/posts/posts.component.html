@@ -1,7 +1,3 @@
-<nav class="navbar navbar-light bg-dark mb-3 ">
-    <h2 class="text-info text-left">TRAVEL AGENDA</h2>
-    <h2 class="text-info text-right">KARTACA</h2>
-</nav><br>
 <div class="container ">
     <h5>ADD TRAVEL POST</h5><br>
     <div class="input-group mb-3">
@@ -35,7 +31,9 @@
                 </a>
             </div>
             <div class="card-body">
-                <p class="card-text">{{ post.post_detail }}</p>
+                <p class="card-text">
+                    {{ (post.post_detail.length > 100) ? (post.post_detail | slice:0:100) + '...' : post.post_detail }}
+                </p>
                 <strong style="color:rgb(6, 6, 85)" class="taskDate"><i class="fa fa-calendar"></i>
                     {{ post.post_date | date }}</strong>
             </div>

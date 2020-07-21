@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "travel",
     "rest_framework",
     "corsheaders",
+    "drf_yasg",
 ]
 
 SIMPLE_JWT = {
@@ -56,6 +57,17 @@ REST_FRAMEWORK = {
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ],
 }
+
+SWAGGER_SETTINGS = {
+    "SECURITY_DEFINITIONS": {
+        "AUTH TOKEN eg [BEARER (JWT)]": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "Header",
+        }
+    }
+}
+
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.BrokenLinkEmailsMiddleware",

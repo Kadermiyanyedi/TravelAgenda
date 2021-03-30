@@ -6,7 +6,7 @@ authors = ["Kader Miyanyedi <kadermiyanyedi@hotmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-django = "^3.0.8"
+django = "^3.0.12"
 djangorestframework = "^3.11.0"
 django-cors-headers = "^3.4.0"
 djangorestframework-simplejwt = {git = "https://github.com/SimpleJWT/django-rest-framework-simplejwt"}

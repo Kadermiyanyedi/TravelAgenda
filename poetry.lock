@@ -102,14 +102,14 @@ jinja2 = "*"
 
 [[package]]
 name = "django"
-version = "3.0.14"
+version = "3.1.9"
 description = "A high-level Python Web framework that encourages rapid development and clean, pragmatic design."
 category = "main"
 optional = false
 python-versions = ">=3.6"
 
 [package.dependencies]
-asgiref = ">=3.2,<4.0"
+asgiref = ">=3.2.10,<4"
 pytz = "*"
 sqlparse = ">=0.2.2"
 
@@ -154,10 +154,10 @@ djangorestframework = "*"
 pyjwt = "*"
 
 [package.extras]
-dev = ["bumpversion (>=0.5.3,<1)", "pytest-watch", "wheel", "twine", "ipython", "cryptography", "pytest-cov", "pytest-django", "pytest-xdist", "pytest", "tox", "flake8", "pep8", "isort", "Sphinx (>=1.6.5,<2)", "sphinx_rtd_theme (>=0.1.9)", "python-jose[] (==3.0.0)"]
+dev = ["bumpversion (>=0.5.3,<1)", "pytest-watch", "wheel", "twine", "ipython", "cryptography", "pytest-cov", "pytest-django", "pytest-xdist", "pytest", "tox", "flake8", "pep8", "isort", "Sphinx (>=1.6.5,<2)", "sphinx_rtd_theme (>=0.1.9)", "python-jose (==3.0.0)"]
 doc = ["Sphinx (>=1.6.5,<2)", "sphinx_rtd_theme (>=0.1.9)"]
 lint = ["flake8", "pep8", "isort"]
-python-jose = ["python-jose[] (==3.0.0)"]
+python-jose = ["python-jose (==3.0.0)"]
 test = ["cryptography", "pytest-cov", "pytest-django", "pytest-xdist", "pytest", "tox"]
 
 [package.source]
@@ -395,7 +395,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "9a1a460b23081c59ec85c91e0a8b5c61c0ff72ecda51c9c9218fc8b6a74e7d3e"
+content-hash = "dd610b4415fa2d4706ef656ba7c9eb6b2adf74c7c090ca4ca4a279ba441cce43"
 
 [metadata.files]
 appdirs = [
@@ -435,8 +435,8 @@ coreschema = [
     {file = "coreschema-0.0.4.tar.gz", hash = "sha256:9503506007d482ab0867ba14724b93c18a33b22b6d19fb419ef2d239dd4a1607"},
 ]
 django = [
-    {file = "Django-3.0.14-py3-none-any.whl", hash = "sha256:9bc7aa619ed878fedba62ce139abe663a147dccfd20e907725ec11e02a1ca225"},
-    {file = "Django-3.0.14.tar.gz", hash = "sha256:d58d8394036db75a81896037d757357e79406e8f68816c3e8a28721c1d9d4c11"},
+    {file = "Django-3.1.9-py3-none-any.whl", hash = "sha256:f5c3f1ce2473abf2f35d992c46d5534e53bd3397867689bde28fd29e856b46b7"},
+    {file = "Django-3.1.9.tar.gz", hash = "sha256:296d10092561a1cf16100885b935dc56cf09c8ccb114e64004554941677c6342"},
 ]
 django-cors-headers = [
     {file = "django-cors-headers-3.4.0.tar.gz", hash = "sha256:f5218f2f0bb1210563ff87687afbf10786e080d8494a248e705507ebd92d7153"},
